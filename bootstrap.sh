@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $EUID -ne 0 ]]; then
-   exec $0
+   exec sudo $0
 fi
 
 if [ ! -f .apt ]; then
